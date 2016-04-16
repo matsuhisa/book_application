@@ -1,0 +1,1 @@
+json.extract! @campaign_application, :id, :read_book_1_title, :read_book_1_date, :read_book_2_title, :read_book_2_date, :read_book_3_title, :read_book_3_date, :read_book_4_title, :read_book_4_date, :created_at, :updated_at

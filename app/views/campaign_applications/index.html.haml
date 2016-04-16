@@ -1,0 +1,35 @@
+%h1 Listing campaign_applications
+
+%table
+  %thead
+    %tr
+      %th Read book 1 title
+      %th Read book 1 date
+      %th Read book 2 title
+      %th Read book 2 date
+      %th Read book 3 title
+      %th Read book 3 date
+      %th Read book 4 title
+      %th Read book 4 date
+      %th
+      %th
+      %th
+
+  %tbody
+    - @campaign_applications.each do |campaign_application|
+      %tr
+        %td= campaign_application.read_book_1_title
+        %td= campaign_application.read_book_1_date
+        %td= campaign_application.read_book_2_title
+        %td= campaign_application.read_book_2_date
+        %td= campaign_application.read_book_3_title
+        %td= campaign_application.read_book_3_date
+        %td= campaign_application.read_book_4_title
+        %td= campaign_application.read_book_4_date
+        %td= link_to 'Show', campaign_application
+        %td= link_to 'Edit', edit_campaign_application_path(campaign_application)
+        %td= link_to 'Destroy', campaign_application, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Campaign application', new_campaign_application_path

@@ -1,0 +1,34 @@
+= form_for @campaign_application do |f|
+  - if @campaign_application.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@campaign_application.errors.count, "error")} prohibited this campaign_application from being saved:"
+      %ul
+        - @campaign_application.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :read_book_1_title
+    = f.text_field :read_book_1_title
+  .field
+    = f.label :read_book_1_date
+    = f.date_select :read_book_1_date
+  .field
+    = f.label :read_book_2_title
+    = f.text_field :read_book_2_title
+  .field
+    = f.label :read_book_2_date
+    = f.date_select :read_book_2_date
+  .field
+    = f.label :read_book_3_title
+    = f.text_field :read_book_3_title
+  .field
+    = f.label :read_book_3_date
+    = f.date_select :read_book_3_date
+  .field
+    = f.label :read_book_4_title
+    = f.text_field :read_book_4_title
+  .field
+    = f.label :read_book_4_date
+    = f.date_select :read_book_4_date
+  .actions
+    = f.submit 'Save'

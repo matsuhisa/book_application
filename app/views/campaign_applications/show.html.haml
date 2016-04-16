@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b Read book 1 title:
+  = @campaign_application.read_book_1_title
+%p
+  %b Read book 1 date:
+  = @campaign_application.read_book_1_date
+%p
+  %b Read book 2 title:
+  = @campaign_application.read_book_2_title
+%p
+  %b Read book 2 date:
+  = @campaign_application.read_book_2_date
+%p
+  %b Read book 3 title:
+  = @campaign_application.read_book_3_title
+%p
+  %b Read book 3 date:
+  = @campaign_application.read_book_3_date
+%p
+  %b Read book 4 title:
+  = @campaign_application.read_book_4_title
+%p
+  %b Read book 4 date:
+  = @campaign_application.read_book_4_date
+
+= link_to 'Edit', edit_campaign_application_path(@campaign_application)
+\|
+= link_to 'Back', campaign_applications_path
