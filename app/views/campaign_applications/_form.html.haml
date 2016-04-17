@@ -11,24 +11,24 @@
     = f.text_field :read_book_1_title
   .field
     = f.label :read_book_1_date
-    = f.date_select :read_book_1_date
+    = f.date_select :read_book_1_date, include_blank: true
   .field
     = f.label :read_book_2_title
     = f.text_field :read_book_2_title
   .field
     = f.label :read_book_2_date
-    = f.date_select :read_book_2_date
+    = f.date_select :read_book_2_date, include_blank: true
   .field
     = f.label :read_book_3_title
     = f.text_field :read_book_3_title
   .field
     = f.label :read_book_3_date
-    = f.date_select :read_book_3_date
+    = f.date_select :read_book_3_date, include_blank: true
   .field
     = f.label :read_book_4_title
     = f.text_field :read_book_4_title
   .field
     = f.label :read_book_4_date
-    = f.date_select :read_book_4_date
+    = f.date_select :read_book_4_date, include_blank: true
   .actions
     = f.submit 'Save'
